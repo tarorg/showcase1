@@ -1,12 +1,12 @@
-import adapter from '@sveltejs/adapter-auto';
-import adapter from '@sveltejs/adapter-cloudflare';
+import autoAdapter from '@sveltejs/adapter-auto';
+import cloudflareAdapter from '@sveltejs/adapter-cloudflare';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
- kit: {
-   adapter: adapter(),
-   // ... truncated ...
- }
+  kit: {
+    adapter: cloudflareAdapter(), // Use the desired adapter here
+    // ... other configuration ...
+  }
 };
 
 export default config;
